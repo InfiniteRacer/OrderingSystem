@@ -198,6 +198,8 @@ def cartmenutwo():
     
 def deleteitems():
     
+    global cost
+    
     print("Enter '1' to cancel and go back to cart menu.")
     itemdelete=input("Enter the item number you entered to add the item (Without the hash): ")
     
