@@ -21,6 +21,11 @@ def start():
     print("- Juice, 20 AED - #103")
     print("- Cereal, 15 AED - #104")
     print("- Chicken, 25 AED - #105")
+    print("- Fish, 20 AED - #106")
+    print("- Eggs, 10 AED - #107")
+    print("- Apple, 5 AED - #108")
+    print("- Bananna, 10 AED - #109")
+    print("- Blueberries, 10 AED - #110")
     print("View cart to delete an item / checkout - #1")
     
     print("")
@@ -94,6 +99,51 @@ def enter():
         print("Item added to cart.")
         print("")
         enter()
+    elif choice == "106":
+        print("")
+        
+        cart.add("Fish")
+        cost = cost + 20
+        
+        print("Item added to cart.")
+        print("")
+        enter()
+    elif choice == "107":
+        print("")
+        
+        cart.add("Eggs")
+        cost = cost + 10
+        
+        print("Item added to cart.")
+        print("")
+        enter()
+    elif choice == "108":
+        print("")
+        
+        cart.add("Apple")
+        cost = cost + 5
+        
+        print("Item added to cart.")
+        print("")
+        enter()
+    elif choice == "109":
+        print("")
+        
+        cart.add("Bananna")
+        cost = cost + 10
+        
+        print("Item added to cart.")
+        print("")
+        enter()
+    elif choice == "110":
+        print("")
+        
+        cart.add("Blueberries")
+        cost = cost + 10
+        
+        print("Item added to cart.")
+        print("")
+        enter()
     elif choice == "1":
         
         print("")
@@ -154,6 +204,7 @@ def deleteitems():
     if itemdelete == "100":
         
         cart.remove("Bread")
+        cost = cost - 10
         
         print("Item deleted!")
         
@@ -163,6 +214,7 @@ def deleteitems():
     elif itemdelete == "101":
         
         cart.remove("Milk")
+        cost = cost - 15
         
         print("Item deleted!")
         
@@ -172,6 +224,7 @@ def deleteitems():
     elif itemdelete == "102":
         
         cart.remove("Yogurt")
+        cost = cost - 5
         
         print("Item deleted!")
         
@@ -181,6 +234,7 @@ def deleteitems():
     elif itemdelete == "103":
         
         cart.remove("Juice")
+        cost = cost - 20
         
         print("Item deleted!")
         
@@ -190,6 +244,7 @@ def deleteitems():
     elif itemdelete == "104":
         
         cart.remove("Cereal")
+        cost = cost - 15
         
         print("Item deleted!")
         
@@ -199,6 +254,57 @@ def deleteitems():
     elif itemdelete == "105":
         
         cart.remove("Chicken")
+        cost = cost - 25
+        
+        print("Item deleted!")
+        
+        print("")
+        cartmenutwo()
+        
+    elif itemdelete == "106":
+        
+        cart.remove("Fish")
+        cost = cost - 20
+        
+        print("Item deleted!")
+        
+        print("")
+        cartmenutwo()
+        
+    elif itemdelete == "107":
+        
+        cart.remove("Eggs")
+        cost = cost - 10
+        
+        print("Item deleted!")
+        
+        print("")
+        cartmenutwo()
+        
+    elif itemdelete == "108":
+        
+        cart.remove("Apple")
+        cost = cost - 5
+        
+        print("Item deleted!")
+        
+        print("")
+        cartmenutwo()
+        
+    elif itemdelete == "109":
+        
+        cart.remove("Bananna")
+        cost = cost - 10
+        
+        print("Item deleted!")
+        
+        print("")
+        cartmenutwo()
+        
+    elif itemdelete == "110":
+        
+        cart.remove("Blueberries")
+        cost = cost - 10
         
         print("Item deleted!")
         
