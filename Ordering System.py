@@ -258,6 +258,7 @@ def checkoutfinal():
     vat = vat - cost
     
     cost = cost + vat
+    cost = cost + deliveryfee
     
     vat=round(vat, 2)
     cost=round(cost, 2)
